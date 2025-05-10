@@ -105,12 +105,12 @@ const technologies = [
     icon: git,
   },
   {
-    name: "C",
-    icon: c,
+    name: "figma",
+    icon: figma,
   },
   {
-    name: "SQL",
-    icon: sql,
+    name: "docker",
+    icon: docker,
   },
 ];
 
