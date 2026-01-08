@@ -54,20 +54,20 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
             { isMobileMenuOpen && (
-                <div className="md:hidden glass-strong animate-fade-in">
-                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+                <div className="md:hidden absolute top-full right-0 glass-strong animate-fade-in border-0">
+                    <div className="container px-4 py-4 flex flex-col gap-2">
                         {
                             navLinks.map((link, index) => {
                                 return (<a 
                                     href={link.href} 
                                     key={index} 
-                                    className="text-lg text-muted-foreground hover:text-foreground py-2"
+                                    className="text-lg min-w-70  text-muted-foreground hover:text-foreground hover:bg-black py-6 text-center rounded-full"
                                     >
                                     {link.label}
                                 </a>)
                             }) 
                         }
-                        <Button size="sm">Contact Me</Button>
+                        <Button size="lg">Contact Me</Button>
                     </div>
             </div>
             )}
