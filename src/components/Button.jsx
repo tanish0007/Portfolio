@@ -7,7 +7,7 @@ export const Button = ({className = "", size = "default", children}) => {
         default: "px-6 py-3 text-base",
         lg: "px-8 py-4 text-lg"
     }
-    const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
+    const classes = `${baseClasses} ${sizeClasses[size]} ${className} cursor-pointer`;
 
     return (
         <button className={classes}>
