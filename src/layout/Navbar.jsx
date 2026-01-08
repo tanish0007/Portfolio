@@ -1,20 +1,30 @@
 import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navLinks = [
     { href:  "#about", label: "About" },
     { href:  "#experience", label: "Experience" },
     { href:  "#projects", label: "Projects" },
     { href:  "#testimonials", label: "Testimonials" },
-    { href:  "#contact", label: "Contact Me" }
 ]
 
 export const Navbar = () => {
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setScrolled] = useState(false);
 
-    return (<header className="fixed glass top-0 left-0 right-0 bg-[#00000095] py-5 z-90">
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50)
+        }
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
+
+    return (
+    <header className={`fixed glass top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "bg-[#00000095] py-4" : "bg-transparent py-5"} z-50 border-0`}>
         <nav className="container mx-auto px-6 flex items-center justify-between">
             <a href="#" className="text-xl font-bold tracking-tight text-primary">{"<Tanish Jangra />"}</a>
 
