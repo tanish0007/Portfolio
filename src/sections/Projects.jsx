@@ -38,15 +38,15 @@ const projects = [
         link: "https://github.com/tanish0007/ecom-express",
         github: "https://github.com/tanish0007/ecom-express",
     },
-    {
-        title: "DocFinder",
-        description:
-          "A lightweight file indexing and search tool built with JavaScript and jQuery, enabling fast and efficient index-based file retrieval.",
-        image: "/project-images/project5.png",
-        tags: ["HTML", "Javascript", "JQuery"],
-        link: "https://tanish0007.github.io/DocFinder",
-        github: "https://github.com/tanish0007/DocFinder",
-    },
+    // {
+    //     title: "DocFinder",
+    //     description:
+    //       "A lightweight file indexing and search tool built with JavaScript and jQuery, enabling fast and efficient index-based file retrieval.",
+    //     image: "/project-images/project5.png",
+    //     tags: ["HTML", "Javascript", "JQuery"],
+    //     link: "https://tanish0007.github.io/DocFinder",
+    //     github: "https://github.com/tanish0007/DocFinder",
+    // },
 ]
 
 export const Projects = () => {
@@ -90,7 +90,7 @@ export const Projects = () => {
                                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div
-                                    className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60"
+                                    className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60"
                                 />
 
                                 {/* Overlay Links */}
