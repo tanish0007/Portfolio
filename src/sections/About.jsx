@@ -35,7 +35,7 @@ export const About = () => {
 
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
                         Building the future,
-                        <span className="font-change text-primary-foreground italic font-normal text-white"> one component at a time.</span>
+                        <span className="font-change text-primary-foreground italic font-normal"> one component at a time.</span>
                     </h2>
                     
                     {/* Description about me */}
