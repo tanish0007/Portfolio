@@ -47,7 +47,7 @@ export const Navbar = () => {
 
             {/* Button */}
             <div className="hidden md:block">
-                <Button>Hire Me</Button>
+                <Button onClick={() => {window.location.href = "#contact";}}>Hire Me</Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -72,7 +72,7 @@ export const Navbar = () => {
                                 </a>)
                             }) 
                         }
-                        <Button onClick={() => setIsMobileMenuOpen(false)} size="lg">Hire Me</Button>
+                        <Button as="a" href="#contact" size="lg" onClick={() => setIsMobileMenuOpen(false)}>Hire Me</Button>
                     </div>
             </div>
             )}

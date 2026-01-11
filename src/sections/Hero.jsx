@@ -59,10 +59,10 @@ export const Hero = () => {
 
                         {/* CTA */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
+                            <Button as="a" href="#contact" size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
-                            <AnimatedBorderButton>
+                            <AnimatedBorderButton as="a" href="/CV/Tanish-Resume-1.pdf" target="_blank" >
                                 <Download className="w-5 h-5" />
                                 Download CV
                             </AnimatedBorderButton>
