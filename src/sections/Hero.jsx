@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { ArrowRight,ChevronDown, Download, Github, Linkedin } from "lucide-react";
+import { ArrowRight,ChevronDown, Download, Github, Instagram, Linkedin } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = ["C++", "Data Structures", "HTML", "CSS", "Javascript", "Bootstrap", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "MySQL", "SQL", "Jest", "Git", "Github", "REST APIs", "Postman", "Vercel", "Render", "Linux"]
@@ -73,7 +73,8 @@ export const Hero = () => {
                             <span className="text-sm">Follow me:</span>
                             {[
                                 { icon: Github, href: "https://github.com/tanish0007" },
-                                { icon: Linkedin, href: "https://www.linkedin.com/in/tanish-jangra-16a4a622a/" }
+                                { icon: Linkedin, href: "https://www.linkedin.com/in/tanish-jangra-16a4a622a/" },
+                                { icon: Instagram, href: "https://www.instagram.com/tanishjangra07"},
                             ].map((social, index) => (
                                 <a key={index} href={social.href} className="border-4 p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300" >{<social.icon className="w-5 h-5" />}</a>
                             ))}
@@ -103,7 +104,7 @@ export const Hero = () => {
                                 {/* Stats badge */}
                                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500 flex flex-col items-center">
                                     <div className="text-2xl font-bold text-primary">2+</div>
-                                    <div className="text-xs text-muted-foreground">Years Exp.</div>
+                                    <div className="text-xs text-white">Years Exp.</div>
                                 </div>  
                             </div>
                         </div>
