@@ -1,4 +1,5 @@
 import { Navbar } from "@/layout/Navbar";
+import { Footer } from "@/layout/Footer";
 
 import { Hero } from "@/sections/Hero"
 import { About } from "@/sections/About";
@@ -20,6 +21,8 @@ function App() {
         <Testimonials />
         <Contact />
       </main>
+
+      <Footer />
     </div>
   )
 }
